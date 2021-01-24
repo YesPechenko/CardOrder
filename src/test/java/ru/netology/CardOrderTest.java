@@ -23,7 +23,7 @@ public class CardOrderTest {
         $(".button__content").click();
         $("[data-test-id=order-success]")
                 .shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер" +
-                                        "свяжется с вами в ближайшее время."));
+                        "свяжется с вами в ближайшее время."));
     }
 
     @Test
@@ -34,7 +34,7 @@ public class CardOrderTest {
         $(".button__content").click();
         $("[data-test-id=order-success]")
                 .shouldHave(exactText("Ваша заявка успешно отправлена!" +
-                                        "Наш менеджер свяжется с вами в ближайшее время."));
+                        "Наш менеджер свяжется с вами в ближайшее время."));
     }
 
     @Test
@@ -55,7 +55,7 @@ public class CardOrderTest {
         $("[data-test-id=agreement]").click();
         $(".button__content").click();
         $("[data-test-id=name].input_invalid .input__sub")
-                .shouldHave(exactText("Имя и Фамилия указаные неверно." +
+                .shouldHave(exactText("Имя и Фамилия указаные неверно." + 
                         "Допустимы только русские буквы, пробелы и дефисы."));
     }
 
@@ -95,8 +95,8 @@ public class CardOrderTest {
         $("[data-test-id=phone] input").setValue("+79273332211");
         $(".button__content").click();
         $("[data-test-id=agreement].input_invalid")
-                .shouldHave(exactText("Я соглашаюсь с условиями обработки и использования моих персональных данных и" +
-                        "разрешаю сделать запрос в бюро кредитных историй"));
+                .shouldHave(exactText("Я соглашаюсь с условиями обработки и использования моих персональных данных" +
+                        "и разрешаю сделать запрос в бюро кредитных историй"));
     }
 
     @Test
